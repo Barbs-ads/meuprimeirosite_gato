@@ -1,0 +1,28 @@
+.container-adocao1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+}
+.container-adocao1-texto{
+    width: 40%;
+}
+#acesse-formulario{
+    text-align: center;
+}
+figure{
+    text-align: center;
+    box-sizing: border-box;
+}
+.titulo-imagem-menus{
+    font-weight: bolder;
+}
+button a{
+    color:#ffffff;
+    font-weight: bolder;
+}
+button a:hover{
+    text-decoration: underline;
+    color: #ffffff;
+}

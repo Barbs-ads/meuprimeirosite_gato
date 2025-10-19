@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/formulario.css">
+    <link rel="stylesheet" href="./style/menus.css">
+    <title>Gatices</title>
+</head>
+
+<body>
+    <div id="interface">
+        <header id="cabecalho">
+            <div id="cabecalho-logotipo">
+                <img id="cabecalho-logotipo-img" src="./Logotipo/LogoGatices4.png" alt="Logotipo da página">
+            </div>
+            <nav id="menu">
+                <h1>Menu Principal</h1>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="quemsomos.html">Quem Somos </a></li>
+                    <li><a href="meusgatos.html">Meus gatos</a></li>
+                    <li><a href="adote.html">Adote</a></li>
+                    <li><a href="#rodape">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="cadastro">
+                <h2>Informações do Adotante</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="nomeInput">Nome Completo</label>
+                            <input type="text" class="form-control" id="nomeInput">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="cpfInput">CPF</label>
+                            <input type="text" class="form-control" id="cpfInput">
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="form-group">
+                            <label for="dtNascInput">Data de Nascimento</label>
+                            <input type="date" class="form-control" id="dtNascInput">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="telInput">Telefone</label>
+                            <input type="text" class="form-control" id="telInput" placeholder="(00) 00000-0000">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="emailInput">E-mail</label>
+                            <input type="email" class="form-control" id="emailInput" placeholder="Informe o e-mail">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="cnfEmailInput">Confirme o e-mail</label>
+                            <input type="email" class="form-control" id="cnfEmailInput">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="logInput">Logradouro</label>
+                            <input type="text" class="form-control" id="logInput">
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="form-group">
+                            <label for="numInput">Número</label>
+                            <input type="text" class="form-control" id="numInput">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="cepInput">CEP</label>
+                            <input type="text" class="form-control" id="cepInput">
+                        </div>
+                    </div>
+                </div>
+        <br>
+
+        <div class="row">
+          <div class="col-md-4">
+            <label class='radio-inline'>
+            <label>Você já teve gatos antes?</label><br>
+            <input type='radio' id="chk" name='escolhaInput' value='sim' checked/>Sim
+            <input type='radio' id="chk" name='escolhaInput' value='nao' checked/>Não
+            </label>
+        </div>
+
+        <div class="col-md-4">
+            <label>Qual gato você quer adotar?</label><br>
+            <input type="checkbox" id="chk" class="checkbox-item" value="administrativa">Jeca
+            <input type="checkbox" id="chk" class="checkbox-item" value="comercial">Leôncio
+            <input type="checkbox" id="chk" class="checkbox-item" value="producao">Urso
+        </div>
+        <div class="col-md-4">
+            <label class='radio-inline'>
+            <label>Qual seu tipo de residência?</label><br>
+            <input type='radio' id="chk" name='residenciaInput' value='apartamento' checked/>Apartamento
+            <input type='radio' id="chk" name='residenciaInput' value='casa' checked/>Casa
+            <input type='radio' id="chk" name='residenciaInput' value='outro' checked/>Outro
+            </label>
+        </div>
+        </div>
+        <br>
+            <div>
+                <label for="exampleFormControlTextarea1">Nos envie uma mensagem com o motivo da adoção:</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+                <br>
+            <div>
+            <button type="button" onclick="salvar()" class="btn btn-success">Enviar</button>
+            <button type="button" onclick="cancelar()" class="btn btn-warning">Cancelar</button>
+            </div>
+             </div> 
+        </main>
+        <footer id="rodape">
+            <p>Endereço: Rua Francisco Marques, 547 - Santos Dumont - Franca - SP</p>
+            <p>Whatsapp (45) 991549003</p>
+            <p><a href="https://instagram.com.br/barbs.alv" target="_blank">Instagram</a></p>
+            <p>E-mail: barbara_dsan@hotmail.com</p>
+        </footer>
+    </div>
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="./script/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+table{
+        padding: 10px;
+        text-align: center;
+        vertical-align: middle;
+}
+caption{
+        color: #241f1d;
+        font-size: 1.1rem;
+        font-weight: bolder;
+      }
+td, th{
+        border: 1px solid #F4A261;
+        padding: 10px;
+        text-align: center;
+        vertical-align: middle;
+    }
+.d1{
+       color: #ffffff;
+       background-color: #F4A261; 
+       vertical-align: top;
+       font-weight: bold;
+      }
+.d2{
+        background-color: #F6EEDC;
+      }
+#tabela-rodape{
+        background-color: #cbdacb;
+}
+.container-texto{
+        display: flex;
+        justify-content: space-between;
+        box-sizing: border-box;
+}
+.esquerdo{
+       border-right: 1px solid #F4A261;
+      }
+.direito .esquerdo{
+    padding: 2%;
+    box-sizing: border-box;
+}
+#imagem-icones{
+    width: 85%;
+    height: auto;
+    border: 5px solid #8D6E63;
+    box-sizing: border-box;
+}
+figure{
+    text-align: center;
+    box-sizing: border-box;
+}
+.titulo-imagem-icones{
+    text-align: center;
+    font-weight: bolder;
+}

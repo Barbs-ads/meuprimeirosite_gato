@@ -1,0 +1,141 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    font-size: 12pt;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+    font-size: 1.1rem;
+    color: #130600;
+    background-color: #788b4142;
+}
+h1{
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    font-size: 2rem;
+    color: #130600;
+    margin-top: 2%;
+    padding: 2%;
+    font-weight: bolder;
+}
+h2{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #130600;
+    font-weight: bolder;
+}
+h3{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 1.3rem;
+    color: #130600; 
+    font-weight: bolder;
+}
+
+p{
+    margin: 5px;
+    padding: 5px;
+}
+
+#interface{
+    background-color:#F6EEDC;
+    width: 90%;
+    margin:auto;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+}
+#cabecalho{
+    background:  #F4A261;; 
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+#cabecalho-logotipo-img{
+    margin-top: 2%;
+}
+ 
+#menu ul{
+    list-style: none;
+    text-transform: uppercase;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+}
+#menu li{
+    background-color: #F4A261;
+    padding: 20px;
+    transition: background-color 0.5s;
+}
+#menu li:hover{
+    background-color: #EB8431;    
+}
+#menu h1{
+    display: none;
+}
+#menu a{
+    color: #241f1d;
+    text-decoration: none;
+    font-weight: bolder;
+    
+}
+#menu a:hover{
+    color: #ffffff;
+    text-decoration: underline;   
+}
+#corpo{
+    height: auto;
+}
+.container-icones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 50px;
+}
+.container-icones figure{
+    border: 2px solid #8D6E63;
+    box-shadow: 5px 5px 5px #8D6E63;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-sizing: border-box;
+}
+.container-icones figure:hover{
+    transform: scale(1.05);
+    box-shadow: 10px 10px 15px #8D6E63;
+}
+.imagem-responsiva{
+    max-width: 100%;
+    height: auto;   
+}
+.link{
+    font-weight: bolder;
+    font-size: 1rem;
+    color: #EB8431;
+    text-align: center;
+}
+.link:hover{
+    text-decoration: underline;
+}
+ul, li{
+    margin-left:30px;
+    padding: 5px;
+} 
+hr{
+    border: 1px solid #F4A261;
+}
+#rodape{
+    background-color:#A3B18A;
+    height: auto;
+    text-align: center;
+    color: #ffffff;
+}
+#rodape a{
+    color: #ffffff;
+}
+#rodape a:hover{
+    text-decoration: underline;
+}
